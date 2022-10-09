@@ -10,7 +10,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res)=>{
     res.render("home");
-    
+});
+
+app.get("/register", (req, res) => {
+    res.render("register");
 });
 
 app.listen(3000, ()=>{
