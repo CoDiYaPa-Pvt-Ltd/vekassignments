@@ -23,6 +23,12 @@ app.get("/login", (req, res) => {
 app.get("/secrets", (req, res) => {
     res.render("secrets");
 });
+app.get("/logout", (req, res) => {
+    res.redirect("/");
+});
+app.get("/submit", (req, res) => {
+    res.render("submit");
+});
 
 app.listen(3000, ()=>{
     console.log("PORT : 3000")
