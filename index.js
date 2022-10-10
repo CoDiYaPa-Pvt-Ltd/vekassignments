@@ -20,6 +20,10 @@ app.get("/login", (req, res) => {
     res.render("login");
 });
 
+app.get("/secrets", (req, res) => {
+    res.render("secrets");
+});
+
 app.listen(3000, ()=>{
     console.log("PORT : 3000")
 });
